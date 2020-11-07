@@ -11,7 +11,7 @@ export class SysPedidosLayoutComponent implements OnInit {
   showFiller
   
 
-  @ViewChild('drawer') drawer: MatDrawer;
+  //@ViewChild('drawer') drawer: MatDrawer;
   constructor() { }
 
   ngOnInit() {
