@@ -16,6 +16,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
+
+
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +39,10 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatButtonModule,
     MatButtonToggleModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,86 @@
+.container-login{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  position: relative;
+ }
+  
+ .card {
+  max-width: 370px;
+ }
+  
+  
+ .header-card{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+ }
+  
+ .header-card > h4 {
+  font-size: 18px;
+ }
+  
+ .actions-login{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-direction: column;
+ }
+  
+ .actions-login> button{
+  width: 100%;
+  height: 50px;
+ }
+  
+ .register-login{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  }
+  
+ .register-login a{
+  text-decoration: none;
+  color: black;
+ }
+  
+  
+ .form {
+  min-width: 370px;
+  max-width: 370px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+ }
+  
+ .form-full-width {
+  width: 90%;
+ }
+  
+ .input-login{
+  font-size: 16px;
+  
+ }
+  
+  
+ .info{
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  transform: scale(1.3);
+ }
+ 
