@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "SysPedidosFrontend"
+  "defaultProject": "SysPedidosFrontend",
+  "cli": {
+    "analytics": "958ce9fa-37b0-432a-8c17-14c689873603"
+  }
 }
