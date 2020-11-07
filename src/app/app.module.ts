@@ -14,6 +14,10 @@ import {MatListModule} from '@angular/material/list';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { PedidosComponent } from './pages/components/pedidos/pedidos.component';
+import { MenuComponent } from './pages/components/menu/menu.component';
+import { EmpresaComponent } from './pages/components/empresa/empresa.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    SysPedidosLayoutComponent
+    SysPedidosLayoutComponent,
+    PedidosComponent,
+    MenuComponent,
+    EmpresaComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
