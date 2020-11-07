@@ -1,3 +1,39 @@
-<app-navbar></app-navbar>
-<app-pedidos></app-pedidos>
-<app-sidebar></app-sidebar>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    
+    <!--Sidenav Component-->
+    <p>Auto-resizing sidenav</p>
+    <p >Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+
+    <!--Toolbar Component-->
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="drawer.toggle()"  aria-label="Example icon-button with menu icon">
+
+        
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>SysPedidos</span>
+      <span class="example-spacer"></span>
+    
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="container">
+      <!--Routlet outlet-->
+      ,,,routing
+    </div>
+   
+  </div>
+
+</mat-drawer-container>

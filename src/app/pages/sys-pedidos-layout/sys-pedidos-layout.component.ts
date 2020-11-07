@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDrawer, MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sys-pedidos-layout',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SysPedidosLayoutComponent implements OnInit {
 
+  showFiller
+  
+
+  @ViewChild('drawer') drawer: MatDrawer;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    //this.toggle()
   }
+
+  //toggle() {
+  //  this.sidenav.toggle(true);
+  //}
+  
 
 }
