@@ -125,6 +125,10 @@
   },
   "defaultProject": "SysPedidosFrontend",
   "cli": {
+<<<<<<< HEAD
     "analytics": "09b0c5ca-e45f-431b-be5e-636d0cb4134a"
+=======
+    "analytics": "958ce9fa-37b0-432a-8c17-14c689873603"
+>>>>>>> main
   }
 }
