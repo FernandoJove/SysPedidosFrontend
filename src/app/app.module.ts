@@ -1,48 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import {MatToolbarModule  } from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import { SysPedidosLayoutComponent } from './pages/sys-pedidos-layout/sys-pedidos-layout.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
 
-import {MatButtonModule} from '@angular/material/button';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { AppRoutingModule } from './app.routing';
+import { ComponentsModule } from './components/components.module';
 
+import { AppComponent } from './app.component';
 
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
-
-import {MatCardModule} from '@angular/material/card';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
+  imports: [
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    ComponentsModule,
+    RouterModule,
+    AppRoutingModule,
+    NgbModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
+    
+
+  ],
   declarations: [
     AppComponent,
-    LoginComponent,
-    NavbarComponent,
-    SysPedidosLayoutComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatSidenavModule,
-    MatListModule,
-    MatCardModule,
-    MatInputModule,
-    MatFormFieldModule
+    AdminLayoutComponent,
+    LoginComponent
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
