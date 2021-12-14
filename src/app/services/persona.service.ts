@@ -12,7 +12,7 @@ import { throwError } from 'rxjs';
 export class PersonaService {
   htpHeaders = new HttpHeaders({'Content-Type':'application/json'});
   //endpoint
-  private url='http://localhost:2020/persona';
+  private url='http://23.22.252.195:2020/persona';
   constructor(private http:HttpClient, private authService: AuthService,private router: Router){}
 
   private addAuthorizationHeader(){

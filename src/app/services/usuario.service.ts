@@ -12,7 +12,7 @@ import { AuthService } from './auth.service';
 export class UsuarioService {
   htpHeaders = new HttpHeaders({'Content-Type':'application/json'});
   //endpoint
-  public url:string ='http://localhost:2020/user';
+  public url:string ='http://23.22.252.195:2020/user';
   private isNoAutorization(e): boolean{
     if(e.status==401 || e.status==403){
       this.router.navigate(['/'])

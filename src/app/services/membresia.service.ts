@@ -12,7 +12,7 @@ import { AuthService } from './auth.service';
 export class MembresiaService {
   htpHeaders = new HttpHeaders({'Content-Type':'application/json'});
   //endpoint
-  private url='http://localhost:2020/membresia';
+  private url='http://23.22.252.195:2020/membresia';
   constructor(private http:HttpClient,private authService: AuthService,private router: Router) { }
   private isNoAutorization(e): boolean{
     if(e.status==401 || e.status==403){

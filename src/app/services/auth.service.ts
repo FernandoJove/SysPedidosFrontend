@@ -34,7 +34,7 @@ export class AuthService {
   }
 
   login(usuario: any): Observable<any> {
-    const urlEndpoint = 'http://localhost:2020/oauth/token';
+    const urlEndpoint = 'http://23.22.252.195:2020/oauth/token';
 
     const credenciales = btoa('ejemploJWT' + ':' + '12345');
 

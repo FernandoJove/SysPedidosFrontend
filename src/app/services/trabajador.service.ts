@@ -13,8 +13,8 @@ import { AuthService } from './auth.service';
 export class TrabajadorService {
   htpHeaders = new HttpHeaders({'Content-Type':'application/json'});
   //endpoint
-  private url='http://localhost:2020/trabajador';
-  private url2='http://localhost:2020/empresa';
+  private url='http://23.22.252.195:2020/trabajador';
+  private url2='http://23.22.252.195:2020/empresa';
   constructor(private http:HttpClient, private authService: AuthService,private router: Router) { }
 
   private addAuthorizationHeader(){
